@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FormInput from "../form-input/form-input";
 import Button from "../button/button";
+import { signInWithGoogle } from "../firebase/firebase.utils";
 
 export default class SignIn extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class SignIn extends Component {
             handleChange={this.handleChange}
           />
           <Button type="submit">Submit Form</Button>
+          <Button onClick={signInWithGoogle}> Sign in with Google </Button>
         </form>
       </div>
     );

@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import "./button.styles.scss";
 
 export default function Button({ children, ...otherProps }) {
